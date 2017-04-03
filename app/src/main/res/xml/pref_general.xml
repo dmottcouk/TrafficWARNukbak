@@ -1,0 +1,20 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="@bool/pref_show_miles_default"
+        android:key="@string/pref_show_miles_key"
+        android:summaryOff="@string/pref_show_miles_false"
+        android:summaryOn="@string/pref_show_miles_true"
+        android:title="@string/pref_show_distance_miles_label" />
+
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/pref_track_location_key"
+        android:summaryOff="@string/pref_description_location_deactivated"
+        android:summaryOn="@string/pref_description_location_activated"
+        android:title="@string/pref_title_location_activate" />
+
+
+
+</PreferenceScreen>

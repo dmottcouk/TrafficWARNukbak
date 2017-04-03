@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/detailsCattypeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/padding_16dp"
+        android:paddingBottom="@dimen/padding_16dp"
+        android:contentDescription="@string/content_description_traffic_type_image"
+        android:src="@drawable/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/detailsRoadCountyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textSize="20sp"
+        android:padding="@dimen/padding_5dp"
+        android:textColor="@color/Red" />
+
+
+    <TextView
+        android:id="@+id/textViewLabelCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:padding="@dimen/padding_5dp"
+        android:text="@string/category_label"
+        android:textSize="18sp"
+        android:textColor="@color/dgreen" />
+
+    <TextView
+        android:id="@+id/detailsCategoryTextView"
+        android:layout_width="match_parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_5dp"
+        android:textSize="18sp"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/textViewLabelTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_label"
+        android:textColor="@color/dgreen"
+        android:textSize="18sp"
+
+        android:padding="@dimen/padding_5dp" />
+
+    <TextView
+        android:id="@+id/detailsTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="@dimen/padding_5dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewLabelDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/distance_label"
+        android:textSize="18sp"
+        android:textColor="@color/dgreen"
+        android:padding="@dimen/padding_5dp"
+
+        />
+    <TextView
+        android:id="@+id/detailsDistanceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_5dp"
+        android:textSize="18sp"
+        />
+
+
+    <TextView
+        android:id="@+id/textViewLabelDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/details_label"
+        android:textColor="@color/dgreen"
+        android:textSize="18sp"
+        android:padding="@dimen/padding_5dp"
+
+        />
+    <TextView
+        android:id="@+id/detailsDetailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_5dp"
+        android:maxLines = "40"
+        android:scrollbars = "vertical"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>
+</ScrollView>

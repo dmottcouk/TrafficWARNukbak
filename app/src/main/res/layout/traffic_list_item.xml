@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey">
+
+    <ImageView
+        android:id="@+id/catTypeImageViewold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/content_description_traffic_type_image"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/roadCountyTextViewold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/catTypeImageViewold"
+        android:textColor="@android:color/holo_red_light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/distanceTextViewold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roadCountyTextViewold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/dgreen"
+        android:layout_alignLeft="@+id/roadCountyTextViewold"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/syncTimeTextViewold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distanceTextViewold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/dgreen"
+        android:layout_alignLeft="@+id/roadCountyTextViewold"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/category2TitleTextViewold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/syncTimeTextViewold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignLeft="@+id/roadCountyTextViewold"
+        android:lines="5"
+        android:textSize="15sp"
+        />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">TrafficWarnUKbak</string>
+    <string name="title_trafficitem_detail">TrafficItem Detail</string>
+
+    <string name="content_authority">uk.co.dmott.android.trafficwarnukbak</string>
+
+    <string name="category_label">Category</string>
+
+    <string name="distance_label">Distance from last location</string>
+
+
+
+
+    <string name="title_label">Title</string>
+    <string name="details_label">Details</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+
+
+    <!-- Key name for storing whether to monitor the location -->
+    <string name="pref_track_location_key" translatable="false">location_active_switch</string>
+    <string name="pref_title_location_activate">Enable location monitoring</string>
+    <string name="pref_description_location_activated">Location monitoring is on</string>
+    <string name="pref_description_location_deactivated">Location monitoring is off</string>
+
+
+    <!-- Key name for allowing the location tracking to be switched on -->
+   <string name="pref_track_location_enabled_key" translatable="false">location_active_enable_switch_save</string>
+
+
+    <!-- Key name for storing whether to show distance in miles or kilometers in SharedPreferences -->
+    <string name="pref_show_miles_key" translatable="false">show_miles</string>
+
+    <string name="pref_show_miles_false">show in kilometers</string>
+    <string name="pref_show_miles_true">show in miles</string>
+
+    <string name="pref_show_distance_miles_label">Show Distances in Miles?</string>
+
+    <string name="pref_current_location_update_interval">Current location interval</string>
+    <string name="pref_current_location_update_interval_key">location_update_interval_key</string>
+    <string-array name="pref_current_location_update_titles">
+        <item>5 mins</item>
+        <item>10 mins</item>
+        <item>20 mins</item>
+        <item>30 mins</item>
+        <item>40 mins</item>
+    </string-array>
+    <string-array name="pref_current_location_update_values">
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>1800</item>
+        <item>2400</item>
+    </string-array>
+
+    <string name="pref_traffic_update_interval">Traffic list interval</string>
+    <string name="pref_traffic_update_interval_key">traffic_update_interval_key</string>
+    <string-array name="pref_traffic_list_update_titles">
+        <item>5 mins</item>
+        <item>10 mins</item>
+        <item>20 mins</item>
+        <item>30 mins</item>
+        <item>40 mins</item>
+    </string-array>
+    <string-array name="pref_traffic_list_update_values">
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>1800</item>
+        <item>2400</item>
+    </string-array>
+
+
+    <string name="pref_location_type">Location Priority</string>
+    <string name="pref_location_priority_type_key">traffic_priority_type_key</string>
+    <string-array name="pref_location_priority_titles">
+        <item>High accuracy</item>
+        <item>Balanced Power Accuracy</item>
+        <item>Low Power</item>
+        <item>No Power</item>
+    </string-array>
+    <string-array name="pref_location_priority_values">
+        <item>100</item>
+        <item>102</item>
+        <item>104</item>
+        <item>105</item>
+    </string-array>
+
+
+
+    <string name="pref_notification_type">Notification type</string>
+    <string name="pref_notification_type_key">traffic_notification_type_key</string>
+    <string-array name="pref_notification_type_titles">
+        <item>Lights</item>
+        <item>All</item>
+        <item>Sound</item>
+        <item>Vibrate</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="pref_notification_type_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+
+    <string name="pref_notification_radius">Notification radius in miles</string>
+    <string name="pref_notification_radius_key">traffic_notification_radius_key</string>
+    <string-array name="pref_notification_radius_titles">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+    <string-array name="pref_notification_radius_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+
+
+    <string name="pref_notification_interval">Minimum notification interval</string>
+    <string name="pref_notification_interval_key">traffic_notification_interval_key</string>
+    <string-array name="pref_notification_interval_titles">
+        <item>5 mins</item>
+        <item>10 mins</item>
+        <item>20 mins</item>
+        <item>30 mins</item>
+        <item>40 mins</item>
+    </string-array>
+    <string-array name="pref_notification_interval_values">
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>1800</item>
+        <item>2400</item>
+    </string-array>
+
+    <!-- Key name for storing whether to show distance in miles or kilometers in SharedPreferences -->
+    <string name="pref_tts_key" translatable="false">do_tts</string>
+
+    <string name="pref_tts_false">No Text to Speech</string>
+    <string name="pref_tts_true">Text to Speech enabled</string>
+
+    <string name="pref_tts_label">Enable Text to Speech?</string>
+
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+
+
+    <string name="content_description_background_image">TrafficWarnUK background image</string>
+    <string name="content_description_traffic_type_image">TrafficWarnUK traffic category image</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+
+
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.co.dmott.trafficwarnukbak">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".TrafficItemListActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppCompatPreferenceActivity"
+            android:label="@string/app_name"
+            android:taskAffinity=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        a
+        <activity
+            android:name=".TrafficItemDetailActivity"
+            android:label="@string/title_trafficitem_detail"
+            android:parentActivityName=".TrafficItemListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TrafficItemListActivity" />
+        </activity>
+
+        <!-- Our ContentProvider -->
+        <provider
+            android:name=".data.TrafficProvider"
+            android:authorities="@string/content_authority"
+            android:exported="false" />
+
+        <!-- This is required for immediate syncs -->
+        <service
+            android:name=".sync.TrafficSyncIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TrafficItemDetailActivity" />
+        </activity>
+
+        <receiver android:name=".LocationTrackerAlarmReceiver" />
+
+        <service android:name=".LocationService" />
+
+        <!-- This is the Service declaration used in conjunction with FirebaseJobDispatcher -->
+        <service
+            android:name=".sync.TrafficwarnukFirebaseJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <!-- This is the Service declaration for doing the Text to Speech -->
+        <service
+            android:name=".TTService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

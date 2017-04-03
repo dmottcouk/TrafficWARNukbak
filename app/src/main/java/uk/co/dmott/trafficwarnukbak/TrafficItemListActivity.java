@@ -742,7 +742,7 @@ public class TrafficItemListActivity extends AppCompatActivity implements
 
             String formatteddistanceFRomCurrentLocation = String.format("%.2f", distanceFromCurrentLocation);
 
-/**            
+/**
 
             if (cat1.toLowerCase().replaceAll("[ \t]", "").contains("accident")) {
                 trafficAdapterViewHolder.iconView.setImageResource(R.drawable.accident);

@@ -1,0 +1,52 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <!-- Allows the user to choose a ringtone in the 'notification' category. -->
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+    <!-- NOTE: RingtonePreference's summary should be set to its value by the activity code. -->
+
+    <ListPreference
+        android:defaultValue="2"
+        android:entries="@array/pref_notification_type_titles"
+        android:entryValues="@array/pref_notification_type_values"
+        android:key="@string/pref_notification_type_key"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_notification_type" />
+
+
+    <ListPreference
+        android:defaultValue="10"
+        android:entries="@array/pref_notification_radius_titles"
+        android:entryValues="@array/pref_notification_radius_values"
+        android:key="@string/pref_notification_radius_key"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_notification_radius" />
+
+
+
+
+    <ListPreference
+        android:defaultValue="600"
+        android:entries="@array/pref_notification_interval_titles"
+        android:entryValues="@array/pref_notification_interval_values"
+        android:key="@string/pref_notification_interval_key"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_notification_interval" />
+
+
+    <CheckBoxPreference
+        android:defaultValue="@bool/pref_tts_default"
+        android:key="@string/pref_tts_key"
+        android:summaryOff="@string/pref_tts_false"
+        android:summaryOn="@string/pref_tts_true"
+        android:title="@string/pref_tts_label" />
+
+
+</PreferenceScreen>
+
+

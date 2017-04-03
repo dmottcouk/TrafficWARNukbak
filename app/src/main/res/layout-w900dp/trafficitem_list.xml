@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context="uk.co.dmott.trafficwarnukbak.TrafficItemListActivity">
+
+    <!--
+    This layout is a two-pane layout for the TrafficItems
+    master/detail flow.
+    
+    -->
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/trafficitem_list"
+        android:name="uk.co.dmott.trafficwarnuk.TrafficItemListFragment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="uk.co.dmott.trafficwarnukbak.TrafficItemListActivity"
+        tools:listitem="@layout/trafficitem_list_content" />
+
+    <FrameLayout
+        android:id="@+id/trafficitem_detail_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/collapsingtoolbarbg1"
+        android:alpha="0.5"
+        android:layout_weight="2" />
+
+</LinearLayout>
